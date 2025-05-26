@@ -1,0 +1,17 @@
+# Ignore folders
+venv/
+testing/
+models/
+scripts/
+
+# Bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Distribution / Packaging
+*.egg-info/
+dist/
+build/
+src/
+
