@@ -1,7 +1,7 @@
 ---------------------------------------------------------------
 ## Frontend Features
 
-[] make Home page
+[] make Home page 
 
 [] make user login
 
