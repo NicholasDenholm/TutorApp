@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
+    # Needs to be in the templates
     return render_template("index.html")
 
 if __name__ == "__main__":
