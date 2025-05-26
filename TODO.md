@@ -1,7 +1,11 @@
 ---------------------------------------------------------------
 ## Frontend Features
 
+
 [] make Home page - Hoth
+
+[] make Home page 
+
 
 [] make user login - Nick
 
