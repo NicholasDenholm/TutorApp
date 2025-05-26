@@ -22,7 +22,7 @@
       user-select: none;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 360px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
@@ -176,5 +176,30 @@
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeButtons = document.querySelectorAll('[data-bs-theme-value]');
+
+      themeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Clear previous active states
+          themeButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+          });
+
+          // Set current as active
+          button.classList.add('active');
+          button.setAttribute('aria-pressed', 'true');
+
+          // Set theme on <html> element
+          const selectedTheme = button.getAttribute('data-bs-theme-value');
+          document.documentElement.setAttribute('data-bs-theme', selectedTheme);
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
