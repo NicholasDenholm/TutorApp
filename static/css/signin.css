@@ -1,0 +1,119 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 800px;
+  min-width: 300px;
+  padding: 0.1rem;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 1px;           /* Sets the space between email and password */
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+img {
+  max-width: 100%;
+  height: 50px;
+  width: auto;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;           /* Set font size to 1.125 times root font size */
+  text-anchor: middle;           /* Center text horizontally in SVG */
+  -webkit-user-select: none;     /* Prevent text selection in WebKit browsers */
+  -moz-user-select: none;        /* Prevent text selection in Firefox */
+  user-select: none;             /* Prevent text selection in modern browsers */
+}
+
+@media (min-width: 360px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;           /* Larger font size for bigger screens (360px and up) */
+  }
+}
+
+.b-example-divider {
+  width: 100%;                  /* Full width */
+  height: 3rem;                 /* Fixed height of 3rem */
+  background-color: #0000001a;  /* Light semi-transparent black background */
+  border: solid rgba(0,0,0,.15);/* Solid border with semi-transparent black */
+  border-width: 1px 0;          /* Border on top and bottom only */
+  box-shadow:                   /* Inset shadows for depth effect */
+    inset 0 .5em 1.5em #0000001a, 
+    inset 0 .125em .5em #00000026;
+}
+
+.b-example-vr {
+  flex-shrink: 0;               /* Prevent shrinking in flex layouts */
+  width: 1.5rem;                /* Fixed width */
+  height: 100vh;                /* Full viewport height */
+}
+
+.bi {
+  vertical-align: -.125em;      /* Adjust vertical alignment slightly up */
+  fill: currentColor;           /* Use current text color to fill SVG icons */
+}
+
+.nav-scroller {
+  position: relative;           /* Position relative for stacking */
+  z-index: 2;                  /* Place above default elements */
+  height: 2.75rem;              /* Fixed height */
+  overflow-y: hidden;           /* Hide vertical scrollbar */
+}
+
+.nav-scroller .nav {
+  display: flex;                /* Use flexbox layout */
+  flex-wrap: nowrap;            /* Prevent wrapping of items */
+  padding-bottom: 1rem;         /* Space below content */
+  margin-top: -1px;             /* Slight negative margin to adjust position */
+  overflow-x: auto;             /* Enable horizontal scrolling */
+  text-align: center;           /* Center text inside */
+  white-space: nowrap;          /* Prevent line breaks */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;                /* Custom violet background color */
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846; /* RGB values for shadows */
+  --bs-btn-font-weight: 600;               /* Bold font weight for button */
+  --bs-btn-color: var(--bs-white);         /* Button text color white */
+  --bs-btn-bg: var(--bd-violet-bg);        /* Button background violet */
+  --bs-btn-border-color: var(--bd-violet-bg); /* Button border violet */
+  --bs-btn-hover-color: var(--bs-white);   /* Hover text color white */
+  --bs-btn-hover-bg: #6528e0;               /* Hover background slightly darker violet */
+  --bs-btn-hover-border-color: #6528e0;    /* Hover border same as background */
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb); /* Shadow color on focus */
+  --bs-btn-active-color: var(--bs-btn-hover-color); /* Active text color */
+  --bs-btn-active-bg: #5a23c8;              /* Active background even darker violet */
+  --bs-btn-active-border-color: #5a23c8;   /* Active border color */
+}
+    
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+/* Controls size of theme dropdown menu */
+.bd-mode-toggle .bi {
+    width: 1em;
+    height: 1em;
+}
+
+/* Displays current activated theme in menu */
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
